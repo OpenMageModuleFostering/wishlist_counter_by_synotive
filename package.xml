@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Wishlist_Counter_By_Synotive</name>
+    <version>1.1.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">OSL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Products Wishlist Counter is an awesome way to make your customer engage when stock are low</summary>
+    <description>Products Wishlist Counter is an awesome way to make your customer engage when stock are low.</description>
+    <notes>Products Wishlist Counter is stable version. We have tested it many different version.</notes>
+    <authors><author><name>Synotive Technologies</name><user>Synotive</user><email>magento@synotive.com</email></author></authors>
+    <date>2015-01-27</date>
+    <time>07:22:44</time>
+    <contents><target name="magecommunity"><dir name="SPL"><dir name="CounterWishlist"><dir name="Helper"><file name="Data.php" hash="87e37df55eb89ae407491b2b3802b31a"/></dir><dir name="Model"><file name="Observer.php" hash="e0c3b71558da03bbd53b3a4bad87d855"/></dir><dir name="etc"><file name="config.xml" hash="3eda1c4eb8e018a44a569e5f468f0ea1"/><file name="system.xml" hash="d11bf3c856a81eb7660c81bfd8dec8fb"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="SPL_CounterWishlist.xml" hash="ab19afb18d753b60ad8a6ff64f55f723"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="counterwishlist.xml" hash="283955124a7fb0ae99843064bb31d60b"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.0.0</min><max>5.5.0</max></php></required></dependencies>
+</package>

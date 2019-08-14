@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * SPL
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ *
+ * @category    SPL
+ * @package     SPL_CounterWishlist
+ * @copyright   Copyright (c) 2015 SPL. 
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+    <modules>
+        <SPL_CounterWishlist>
+            <version>1.1.0</version>
+        </SPL_CounterWishlist>
+    </modules>
+    <global>
+        <helpers>
+            <spl_counterwishlist>
+                <class>SPL_CounterWishlist_Helper</class>
+            </spl_counterwishlist>
+        </helpers>
+        <models>
+            <spl_counterwishlist>
+                <class>SPL_CounterWishlist_Model</class>
+            </spl_counterwishlist>
+        </models>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <countersales>
+                    <file>counterwishlist.xml</file>
+                </countersales>
+            </updates>
+        </layout>
+        <events>
+            <catalog_product_load_after>
+                <observers>
+                    <spl_counterwishlist>
+                        <type>singleton</type>
+                        <class>SPL_CounterWishlist_Model_Observer</class>
+                        <method>catalogProductLoadAfter</method>
+                    </spl_counterwishlist>
+                </observers>
+            </catalog_product_load_after>
+            <catalog_product_collection_load_after>
+                <observers>
+                    <spl_counterwishlist>
+                        <type>singleton</type>
+                        <class>SPL_CounterWishlist_Model_Observer</class>
+                        <method>catalogProductCollectionLoadAfter</method>
+                    </spl_counterwishlist>
+                </observers>
+            </catalog_product_collection_load_after>
+        </events>
+    </frontend>
+</config>
