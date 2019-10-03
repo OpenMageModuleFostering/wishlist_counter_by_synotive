@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Wishlist_Counter_By_Synotive",
+    "name": "OpenMageModuleFostering\/Wishlist_Counter_By_Synotive",
     "type": "magento-module",
     "license": "OSL",
     "homepage": "",
     "description": "Products Wishlist Counter is an awesome way to make your customer engage when stock are low",
     "authors": [
-    {
-        "name": "Synotive Technologies",
-        "email": "magento@synotive.com"
-    }
-],
+        {
+            "name": "Synotive Technologies",
+            "email": "magento@synotive.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
